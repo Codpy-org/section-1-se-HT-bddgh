@@ -12,7 +12,7 @@ for _ in range(NUM_POINTS):
     x = random.uniform(-RADIUS, RADIUS)
     y = random.uniform(-1, 1)
 
-    if x**SQUARE_EXPONENT + y**2 <= RADIUS**SQUARE_EXPONENT:
+    if x**SQUARE_EXPONENT + y**SQUARE_EXPONENT <= RADIUS**SQUARE_EXPONENT:
         inside_circle += POINT_COUNT_INCREMENT
 
 pi_neapple = (inside_circle / NUM_POINTS) * AREA_FACTOR
