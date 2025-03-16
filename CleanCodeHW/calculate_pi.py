@@ -10,7 +10,7 @@ inside_circle = 0
 
 for _ in range(NUM_POINTS):
     x = random.uniform(-RADIUS, RADIUS)
-    y = random.uniform(-1, 1)
+    y = random.uniform(-RADIUS, RADIUS)
 
     if x**SQUARE_EXPONENT + y**SQUARE_EXPONENT <= RADIUS**SQUARE_EXPONENT:
         inside_circle += POINT_COUNT_INCREMENT
